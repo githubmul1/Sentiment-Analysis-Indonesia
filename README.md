@@ -1,37 +1,41 @@
-# 🧠 Sentiment Analysis Project (Bahasa Indonesia)
+# 🧠 Sentiment Analysis on YouTube Comments (GTA V Trailer)
 
 ## 📌 Deskripsi Proyek
 
-Proyek ini bertujuan untuk melakukan analisis sentimen terhadap data teks berbahasa Indonesia menggunakan pendekatan Machine Learning.
+Proyek ini bertujuan untuk menganalisis sentimen komentar pengguna pada video YouTube trailer game GTA V.
 
-Analisis sentimen digunakan untuk mengklasifikasikan teks ke dalam kategori:
+Dengan menggunakan teknik Natural Language Processing (NLP), komentar diklasifikasikan ke dalam kategori:
 
 * Positif 😊
 * Negatif 😡
 * Netral 😐
 
-Proyek ini merupakan bagian dari pengembangan kemampuan dalam bidang Natural Language Processing (NLP).
+Proyek ini menunjukkan bagaimana data dari media sosial dapat digunakan untuk memahami opini publik terhadap suatu konten populer.
 
 ---
 
 ## 📊 Dataset
 
-Dataset yang digunakan berupa kumpulan data teks (ulasan/komentar) berbahasa Indonesia.
+Dataset diambil dari komentar pengguna pada video YouTube:
 
-* Jumlah data: [isi]
-* Label: Positif, Negatif, Netral
-* Sumber: [isi sumber dataset]
+* Video: GTA V Trailer
+* Sumber: YouTube Comments
+* Bahasa: Campuran (Indonesia & Inggris)
 
 ---
 
 ## ⚙️ Tahapan Proyek
 
-### 1. Data Preprocessing
+### 1. Data Collection
+
+* Scraping komentar dari YouTube
+
+### 2. Data Preprocessing
 
 * Case folding
 * Tokenization
 * Stopword removal
-* Stemming (Bahasa Indonesia)
+* Stemming
 
 ---
 
@@ -45,13 +49,11 @@ Dataset yang digunakan berupa kumpulan data teks (ulasan/komentar) berbahasa Ind
 
 Model yang digunakan:
 
-* [Contoh: Logistic Regression / Naive Bayes / SVM]
+* [Isi model kamu, misal: Logistic Regression / Naive Bayes]
 
 ---
 
 ## 📈 Evaluasi Model
-
-Evaluasi dilakukan menggunakan:
 
 * Accuracy
 * Precision
@@ -63,10 +65,12 @@ Evaluasi dilakukan menggunakan:
 
 ## 📊 Hasil Model
 
-* Akurasi: **[isi hasil]**
+* Akurasi: **Akurasi SVM: 94.51%**
+           **Akurasi Random Forest: 91.44%**
+           **Akurasi Deep Learning: 92.60%**
 
 Kesimpulan:
-Model mampu mengklasifikasikan sentimen dengan cukup baik pada data teks berbahasa Indonesia.
+Model mampu mengklasifikasikan sentimen komentar pengguna dengan cukup baik, sehingga dapat digunakan untuk menganalisis opini publik terhadap konten video.
 
 ---
 
@@ -76,7 +80,7 @@ Model mampu mengklasifikasikan sentimen dengan cukup baik pada data teks berbaha
 * Pandas
 * Scikit-learn
 * NLTK / Sastrawi
-* Matplotlib / Seaborn
+* YouTube API (jika digunakan)
 
 ---
 
@@ -84,25 +88,24 @@ Model mampu mengklasifikasikan sentimen dengan cukup baik pada data teks berbaha
 
 1. Clone repository:
 
-```bash
+```bash id="6jdg07"
 git clone https://github.com/username/sentiment-analysis-indonesia.git
 ```
 
 2. Install dependencies:
 
-```bash
+```bash id="xnybhq"
 pip install -r requirements.txt
 ```
 
 3. Jalankan notebook:
 
-* Buka file `.ipynb` di Jupyter Notebook / Google Colab
+* Buka `.ipynb` di Jupyter Notebook / Google Colab
 
 ---
 
 ## 📁 Struktur Project
 
-```id="x8xjdl"
 sentiment-analysis/
 │
 ├── data/
@@ -117,12 +120,12 @@ sentiment-analysis/
 ## 👤 Author
 
 **Mulya Adi Putra**
-Informatics Student – Artificial Intelligence Enthusiast
+Informatics Student – Artificial Intelligence
 
 ---
 
-## 🌟 Catatan
+## 🌟 Insight
 
-Proyek ini menunjukkan implementasi Natural Language Processing (NLP) dalam memahami opini publik berbasis teks.
+Analisis ini menunjukkan bahwa komentar pengguna pada video populer dapat memberikan gambaran umum terhadap persepsi publik, yang berguna untuk strategi pemasaran dan evaluasi konten digital.
 
 ---
